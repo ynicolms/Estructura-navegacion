@@ -28,12 +28,12 @@ const crearCartasDeUsuarios = ( arregloDondeEstanLosUsuarios ) => {
     // [ "<div>...</div", "", "" ];
 return arregloDondeEstanLosUsuarios.map( porCadaUsuario => // estilo de bootstrap para que nos imprima las card de cada ususario, junto con la img de cada uno, junto con el nombre, apellido y correo. 
 `<div class="card" style="width: 18rem;"> 
-<img src="${porCadaUsuario.avatar}" class="card-img-top rounded-circle " alt="...">
+<img id="img" src="${porCadaUsuario.avatar}" class="card-img-top rounded-circle  " alt="imagen avatar">
 <div class="card-body">
   <h5 class="card-title">${ porCadaUsuario.first_name} ${porCadaUsuario.last_name}</h5>
   
 </div>
-<ul class="list-group list-group-flush">
+<ul id="lista" class="list-group list-group-flush">
   <li class="list-group-item">${ porCadaUsuario.email}</li>
   <li class="list-group-item">Some quick example text to build on the card title and make up the bulk of the card's content.</li>
 </ul>
